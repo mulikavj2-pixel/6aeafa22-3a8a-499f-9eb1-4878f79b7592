@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
@@ -8,7 +8,7 @@ import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import TeamCardNine from '@/components/sections/team/TeamCardNine';
-import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
+import TestimonialCardEleven from '@/components/sections/testimonial/TestimonialCardEleven';
 import SocialProofThree from '@/components/sections/socialProof/SocialProofThree';
 import BlogCardNine from '@/components/sections/blog/BlogCardNine';
 import FaqSplitText from '@/components/sections/faq/FaqSplitText';
@@ -240,8 +240,8 @@ export default function LandingPage() {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810262678-arji3bm4.jpg",
               imageAlt: "David Rabin",
               socialLinks: [
-                { icon: Linkedin, href: "https://linkedin.com", ariaLabel: "LinkedIn" },
-                { icon: Twitter, href: "https://twitter.com", ariaLabel: "Twitter" }
+                { icon: Linkedin, url: "https://linkedin.com" },
+                { icon: Twitter, url: "https://twitter.com" }
               ]
             },
             {
@@ -251,7 +251,7 @@ export default function LandingPage() {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810264039-zxanzmrs.png",
               imageAlt: "Sarah Cohen",
               socialLinks: [
-                { icon: Linkedin, href: "https://linkedin.com", ariaLabel: "LinkedIn" }
+                { icon: Linkedin, url: "https://linkedin.com" }
               ]
             },
             {
@@ -261,8 +261,8 @@ export default function LandingPage() {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810265315-bbibn86o.jpg",
               imageAlt: "Avi Lev",
               socialLinks: [
-                { icon: Linkedin, href: "https://linkedin.com", ariaLabel: "LinkedIn" },
-                { icon: Mail, href: "mailto:avi@freshfund.com", ariaLabel: "Email" }
+                { icon: Linkedin, url: "https://linkedin.com" },
+                { icon: Mail, url: "mailto:avi@freshfund.com" }
               ]
             },
             {
@@ -272,11 +272,12 @@ export default function LandingPage() {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810266808-xlktiybh.jpg",
               imageAlt: "Nira Mizrahi",
               socialLinks: [
-                { icon: Linkedin, href: "https://linkedin.com", ariaLabel: "LinkedIn" },
-                { icon: Twitter, href: "https://twitter.com", ariaLabel: "Twitter" }
+                { icon: Linkedin, url: "https://linkedin.com" },
+                { icon: Twitter, url: "https://twitter.com" }
               ]
             }
           ]}
+          gridVariant="uniform-all-items-equal"
           animationType="slide-up"
           containerStyle="default"
           textboxLayout="default"
@@ -285,7 +286,7 @@ export default function LandingPage() {
       </div>
 
       <div id="testimonials" data-section="testimonials">
-        <TestimonialCardSix
+        <TestimonialCardEleven
           title="What Our Founders Say"
           description="Hear directly from the entrepreneurs we've invested in and supported."
           tag="Portfolio Founder Feedback"
@@ -293,56 +294,47 @@ export default function LandingPage() {
           testimonials={[
             {
               id: "1",
-              name: "Yuval Oren",
-              handle: "Founder & CEO, DataVault AI",
-              testimonial: "Fresh Fund didn't just write a check. They opened doors, made introductions, and gave us strategic guidance that accelerated our growth by 18 months.",
+              nameTitle: "Yuval Oren, Founder & CEO, DataVault AI",
+              quote: "Fresh Fund didn't just write a check. They opened doors, made introductions, and gave us strategic guidance that accelerated our growth by 18 months.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810268014-g05bj7j0.jpg",
               imageAlt: "Yuval Oren"
             },
             {
               id: "2",
-              name: "Roni Glam",
-              handle: "Founder, SecureFlow",
-              testimonial: "The team at Fresh Fund understands the Israeli tech ecosystem like no other investor. They've helped us navigate our international expansion with confidence.",
+              nameTitle: "Roni Glam, Founder, SecureFlow",
+              quote: "The team at Fresh Fund understands the Israeli tech ecosystem like no other investor. They've helped us navigate our international expansion with confidence.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810269191-l3643wpo.jpg",
               imageAlt: "Roni Glam"
             },
             {
               id: "3",
-              name: "Orit Daniels",
-              handle: "CEO, NeuroAnalytics",
-              testimonial: "Beyond capital, they provided operational mentorship, customer introductions, and a genuine partnership. That's what every founder needs.",
+              nameTitle: "Orit Daniels, CEO, NeuroAnalytics",
+              quote: "Beyond capital, they provided operational mentorship, customer introductions, and a genuine partnership. That's what every founder needs.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810270599-tozw85g6.jpg",
               imageAlt: "Orit Daniels"
             },
             {
               id: "4",
-              name: "Lior Shushan",
-              handle: "Co-founder, CloudOptimize",
-              testimonial: "Fresh Fund's network was instrumental in landing our first enterprise clients. The value add goes far beyond the investment.",
+              nameTitle: "Lior Shushan, Co-founder, CloudOptimize",
+              quote: "Fresh Fund's network was instrumental in landing our first enterprise clients. The value add goes far beyond the investment.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810271620-9i37ugba.jpg",
               imageAlt: "Lior Shushan"
             },
             {
               id: "5",
-              name: "Michal Terzian",
-              handle: "Founder, FinSecure",
-              testimonial: "They believed in us before others did and stood by us during the tough times. That trust is invaluable for a founder.",
+              nameTitle: "Michal Terzian, Founder, FinSecure",
+              quote: "They believed in us before others did and stood by us during the tough times. That trust is invaluable for a founder.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810273363-7bl70uuz.jpg",
               imageAlt: "Michal Terzian"
             },
             {
               id: "6",
-              name: "Alon Kastiel",
-              handle: "CEO, DevOpsFlow",
-              testimonial: "The Fresh Fund team brings deep technical knowledge combined with business acumen. Exactly what you need as a founder.",
+              nameTitle: "Alon Kastiel, CEO, DevOpsFlow",
+              quote: "The Fresh Fund team brings deep technical knowledge combined with business acumen. Exactly what you need as a founder.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810275055-vwcp3gyd.jpg",
               imageAlt: "Alon Kastiel"
             }
           ]}
-          speed={30}
-          topMarqueeDirection="left"
-          animationType="slide-up"
           textboxLayout="default"
           useInvertedBackground="noInvert"
         />
@@ -367,8 +359,7 @@ export default function LandingPage() {
             "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810291899-81ma711d.jpg"
           ]}
           speed={40}
-          topMarqueeDirection="left"
-          animationType="opacity"
+          showCard={true}
           textboxLayout="default"
           useInvertedBackground="noInvert"
         />
@@ -385,7 +376,7 @@ export default function LandingPage() {
               id: "1",
               category: "Market Trends",
               title: "The Future of AI in Israeli Tech: Opportunities and Challenges",
-              tags: ["AI/ML", "Market Analysis", "8 min read"],
+              description: "Exploring AI opportunities and challenges in the Israeli tech ecosystem.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810293034-1qxp9bve.jpg",
               imageAlt: "AI technology trends"
             },
@@ -393,7 +384,7 @@ export default function LandingPage() {
               id: "2",
               category: "Founder Insights",
               title: "Navigating Series A: Everything First-Time Founders Need to Know",
-              tags: ["Fundraising", "Founder Guide", "12 min read"],
+              description: "A comprehensive guide for first-time founders navigating Series A fundraising.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810294063-s0t5zucr.jpg",
               imageAlt: "Series A fundraising guide"
             },
@@ -401,13 +392,13 @@ export default function LandingPage() {
               id: "3",
               category: "Industry Watch",
               title: "Why Tel Aviv is Becoming a Global Tech Powerhouse",
-              tags: ["Ecosystem", "Strategy", "10 min read"],
+              description: "Understanding Tel Aviv's emergence as a global technology hub.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810295570-etbtwpfw.jpg",
               imageAlt: "Tech industry insights"
             }
           ]}
-          variant="card"
           animationType="slide-up"
+          containerStyle="default"
           textboxLayout="default"
           useInvertedBackground="noInvert"
         />
