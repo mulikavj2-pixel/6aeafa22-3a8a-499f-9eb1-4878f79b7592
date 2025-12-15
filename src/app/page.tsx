@@ -238,43 +238,28 @@ export default function LandingPage() {
               name: "David Rabin",
               role: "Founding Partner & CEO",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810262678-arji3bm4.jpg",
-              imageAlt: "David Rabin",
-              socialLinks: [
-                { icon: Linkedin, url: "https://linkedin.com" },
-                { icon: Twitter, url: "https://twitter.com" }
-              ]
+              imageAlt: "David Rabin"
             },
             {
               id: "2",
               name: "Sarah Cohen",
               role: "Partner, Operations & Growth",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810264039-zxanzmrs.png",
-              imageAlt: "Sarah Cohen",
-              socialLinks: [
-                { icon: Linkedin, url: "https://linkedin.com" }
-              ]
+              imageAlt: "Sarah Cohen"
             },
             {
               id: "3",
               name: "Avi Lev",
               role: "Investment Partner, Technology",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810265315-bbibn86o.jpg",
-              imageAlt: "Avi Lev",
-              socialLinks: [
-                { icon: Linkedin, url: "https://linkedin.com" },
-                { icon: Mail, url: "mailto:avi@freshfund.com" }
-              ]
+              imageAlt: "Avi Lev"
             },
             {
               id: "4",
               name: "Nira Mizrahi",
               role: "Chief Investment Officer",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810266808-xlktiybh.jpg",
-              imageAlt: "Nira Mizrahi",
-              socialLinks: [
-                { icon: Linkedin, url: "https://linkedin.com" },
-                { icon: Twitter, url: "https://twitter.com" }
-              ]
+              imageAlt: "Nira Mizrahi"
             }
           ]}
           gridVariant="uniform-all-items-equal"
