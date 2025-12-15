@@ -262,7 +262,6 @@ export default function LandingPage() {
               imageAlt: "Nira Mizrahi"
             }
           ]}
-          gridVariant="uniform-all-items-equal"
           animationType="slide-up"
           containerStyle="default"
           textboxLayout="default"
