@@ -343,6 +343,7 @@ export default function LandingPage() {
             "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765810291899-81ma711d.jpg"
           ]}
           speed={40}
+          animationType="reveal-blur"
           textboxLayout="default"
           useInvertedBackground="noInvert"
         />
